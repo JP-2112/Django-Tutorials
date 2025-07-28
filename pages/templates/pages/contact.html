@@ -1,0 +1,44 @@
+{% extends 'pages/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="text-center mb-4">{{ subtitle }}</h1>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Get in Touch</h5>
+                    <p class="card-text">We'd love to hear from you! Reach out to us using any of the following contact methods:</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                                <h6>Email</h6>
+                                <p><a href="mailto:{{ email }}" class="text-decoration-none">{{ email }}</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                                <h6>Phone</h6>
+                                <p><a href="tel:{{ phone }}" class="text-decoration-none">{{ phone }}</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="text-center">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary mb-2"></i>
+                                <h6>Address</h6>
+                                <p>{{ address }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
