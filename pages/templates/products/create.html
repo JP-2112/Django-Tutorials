@@ -19,7 +19,8 @@
  <form method="POST" action="{% url 'form' %}">
  {% csrf_token %}
  <input type="text" class="form-control mb-2" placeholder="Enter name" name="name" value="{{ form.data.name|default:'' }}" />
- <input type="text" class="form-control mb-2" placeholder="Enter price" name="price" value="{{ form.data.price|default:'' }}" />
+ <textarea class="form-control mb-2" placeholder="Enter description" name="description" rows="3">{{ form.data.description|default:'' }}</textarea>
+ <input type="number" step="0.01" class="form-control mb-2" placeholder="Enter price" name="price" value="{{ form.data.price|default:'' }}" />
  <input type="submit" class="btn btn-primary" value="Send" />
  </form>
  <div class="mt-3">

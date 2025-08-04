@@ -43,3 +43,6 @@ wheels/
 
 # Media files
 media/
+
+# Exclude exercise folders
+Ejercicio clase topicos/
